@@ -21,7 +21,7 @@ const CardList = ({cardData}) => {
   return (
     <div className="flex flex-wrap justify-center">
       {cardData.map((e) => (
-        <div key={e.id} className="max-w-sm mx-2 my-4">
+        <div key={e.id} className="sm:w-[22vw] max-w-sm mx-2 my-4">
           <Link to={`/card/${e.id}`}>
             <div className="bg-white shadow-lg rounded-lg overflow-hidden transform transition duration-300 hover:scale-105">
               <img
